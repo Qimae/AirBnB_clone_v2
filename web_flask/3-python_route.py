@@ -4,6 +4,7 @@ listens on 0.0.0.0 port 5000
 Routes '/' displays "Hello HBNB!"
 '/hbnb' dislpays "HBNB"
 '/c/<text>' displys C
+'/python/(<text>) displays Python is cool
 """
 
 from flask import Flask
@@ -27,6 +28,7 @@ def c_text(text):
     text = text.replace("_", " ")
     return "C %s" % text
 
+@app.route('/python', strict_slashes=False)
 @app.route('/python/(<text>)', strict_slashes=False)
 def python_text(text="is cool"):
     """Displays Python"""
