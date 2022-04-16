@@ -1,3 +1,3 @@
-# AirBnB_clone_v2 Web Framework
+# Web Flask
 
-Web framework for airbnb clone using flask
+Scripts to run flask configuration
